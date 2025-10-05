@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tajawal;
+}
+body{
+    background: #333;
+    color: white;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+}
+.container2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formc{
+    /* background: #ff0; */
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    width: 50%;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.formc form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.formc form h1{
+  font-size: 3rem;
+}
+.formc form .inp{
+    margin-bottom: 10px;
+    width: 200px;
+    border: 1.5px solid #000;
+    border-radius: 15px;
+    outline: none;
+    box-shadow: none; 
+    padding: 7px;
+}
+#t{
+  border-radius: 15px;
+  padding: 10px;
+  width: 90px;
+  border: 1px solid #000;
+}
+.check{
+    display: flex;
+    width: 70%;
+    flex-direction: row;
+    margin: auto;
+}
+.check span{
+    margin-left: 7px;
+}
+/* From Uiverse.io by kennyotsu */ 
+.card {
+  /* color used to softly clip top and bottom of the .words container */
+  --bg-color: transparent;
+  background-color: var(--bg-color);
+  padding: 2rem 2rem;
+  border-radius: 1.25rem;
+}
+.loader {
+  color: rgb(124, 124, 124);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 40px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+}
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  text-align: center;
+  color: #956afa;
+  font-size: 2rem;
+  animation: spin_4991 7s infinite;
+}
+.w0{
+  width: 10%;
+  margin-left: 5px;
+}
+.w1{
+  width: 10%;
+  margin-left: 5px;
+}
+.w3{
+  width: 10%;
+  margin-left: 5px;
+}
+.w4{
+  width: 10%;
+  margin-left: 5px;
+}
+.w5{
+  width: 10%;
+  margin-left: 5px;
+}
+.w6{
+  width: 10%;
+  margin-left: 5px;
+}
+
+@keyframes spin_4991 {
+  0%{
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+  9.9%{
+    -webkit-transform: translateY(-102%);
+    transform: translateY(-102%);
+  }
+  10%{
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  20%{
+    -webkit-transform: translateY(-202%);
+    transform: translateY(-202%);
+  }
+  30%{
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+  }
+  40%{
+    -webkit-transform: translateY(-302%);
+    transform: translateY(-302%);
+  }
+  50%{
+    -webkit-transform: translateY(-300%);
+    transform: translateY(-300%);
+  }
+  60% {
+    -webkit-transform: translateY(-402%);
+    transform: translateY(-402%);
+  }
+  70%{
+    -webkit-transform: translateY(-400%);
+    transform: translateY(-400%);
+  }
+  80%{
+    -webkit-transform: translateY(-502%);
+    transform: translateY(-502%);
+  }
+  90%{
+    -webkit-transform: translateY(-500%);
+    transform: translateY(-500%);
+  }
+  100%{
+    -webkit-transform: translateY(-602%);
+    transform: translateY(-602%);
+  }
+}
